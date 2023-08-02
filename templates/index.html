@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block title %}
 Главная
 {% endblock %}
@@ -8,7 +7,7 @@
 {% block content %}
 <ul class="nav nav-pills sticky-top bg-white nav-fill">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="index.html">
+    <a class="nav-link active" aria-current="page" href="{% url 'main-page' %}">
       <span style="font-weight: bold;">Главная</span>
     </a>
   </li>
@@ -46,13 +45,13 @@
 <div id="carouselExampleControls" class="carousel slide bg-primary" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="{% static 'img/adv.png' %}" class="mx-auto d-block w-33" alt="...">
+      <img src="{% static 'img/pig.png' %}" class="mx-auto d-block w-33" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="{% static 'img/adv.png' %}" class="mx-auto d-block w-33" alt="...">
+      <img src="{% static 'img/pig.png' %}" class="mx-auto d-block w-33" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="{% static 'img/adv.png' %}" class="mx-auto d-block w-33" alt="...">
+      <img src="{% static 'img/pig.png' %}" class="mx-auto d-block w-33" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
